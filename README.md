@@ -54,7 +54,7 @@ To start the webpack-dev-server, run the following command:
     npm start
 ```
 
-Download Expo Go from the Play Store or App Store and scan the QR code showing on the terminal with the Expo Go app on the phone to see the app on your mobile.
+Download Expo Go from the Play Store or Apple Store and scan the QR code showing on the terminal with the Expo Go app on the phone to see the app on your mobile.
 
 ## Author: Jose Abel Ramirez Frontany\*\*
 
