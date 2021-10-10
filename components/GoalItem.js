@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
 const GoalItem = props => {
     return (
+
     <TouchableOpacity 
         activeOpacity={0.8} 
         
