@@ -10,6 +10,8 @@ export default function App() {
 
   const addGoalHandler = goalTitle => {
       setCourseGoals(currentGoals => [...currentGoals, { id: Math.random().toString(), value: goalTitle}]);
+
+      setIsAddMode(false);
   }
 
   const removeGoalHandler = goalId => {
@@ -18,12 +20,20 @@ export default function App() {
     });
   }
 
+  const cancelGoalAdditionHandler = () => {
+    setIsAddMode(false);
+  }
+
   return (
     <View style={styles.screen}>
 
       <Button title="Add New Goal" onPress={() => setIsAddMode(true)} />
 
-        <GoalInput visible={isAddMode} onAddGoal={addGoalHandler}/>
+        <GoalInput 
+          visible={isAddMode} 
+          onAddGoal={addGoalHandler}
+          onCancel={cancelGoalAdditionHandler}
+        />
 
         <FlatList 
           data={courseGoals}
